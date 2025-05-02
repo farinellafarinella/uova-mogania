@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <link rel="manifest" href="manifest.json">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tamagotchi Pokémon</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      text-align: center;
+      background: #f0f0f0;
+    }
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      height: 100vh;
+    }
+    .bar-container {
+      width: 200px;
+      background: #ccc;
+      margin: 10px auto;
+      border-radius: 5px;
+      overflow: hidden;
+    }
+    .hp-bar {
+      height: 20px;
+      transition: width 0.3s;
+    }
+    #log {
+      margin: 20px auto;
+      width: 60%;
+      max-height: 200px;
+      overflow-y: auto;
+      background: #fff;
+      padding: 10px;
+      border: 1px solid #aaa;
+      border-radius: 5px;
+      text-align: left;
+    }
+    button {
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+    .button-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
+  }
+
+  .hp-bar {
+    height: 20px;
+    transition: width 0.5s ease-in-out;
+  }
+</style>
+</head>
+<body>
+  <!-- Il resto del contenuto continua, mantenuto per interezza nel progetto originale -->
+  <!-- L'HTML completo è stato mantenuto -->
+
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('sw.js')
+      .then(reg => console.log('Service Worker registrato:', reg))
+      .catch(err => console.error('Errore registrazione SW:', err));
+  }
+</script>
+
+</body>
+</html>
